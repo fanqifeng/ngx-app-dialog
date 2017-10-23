@@ -23,7 +23,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppDialogModule } from 'ngx-cookie';
+import { AppDialogModule } from '*/AppDialogService';
 
 import { AppComponent }  from './app.component';
 
@@ -71,9 +71,10 @@ prompt(appDialogOptions: AppDialogOptions);
 ```
 
 ### <a name="open"></a> open()
-返回一个弹出框实例，alert()、confirm()、prompt()方法都是open()的其中一种，
-方法都是open的AppDialogOptions接受的对象中可接受type属性来指明dialog是alert或者confirm或者prompt
-open方法还可接受content对象，该对象是自定义弹出框内容
+返回一个弹出框实例，alert()、confirm()、prompt()方法都是open()方法的其中一种，
+AppDialogOptions中可接受type属性来指明dialog是alert或者confirm或者prompt
+open方法还可接受content参数，该对象是自定义弹出框内容,
+content参数和type属性必须有一个
 
 ```typescript
 /**

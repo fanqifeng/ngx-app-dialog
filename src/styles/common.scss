@@ -1,0 +1,230 @@
+html {
+  color: #000;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html, body {
+  font-family: sans-serif
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0
+}
+
+input, select, textarea {
+  font-size: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0
+}
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal
+}
+
+del {
+  text-decoration: line-through
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500
+}
+
+ol, ul {
+  list-style: none
+}
+
+caption, th {
+  text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500
+}
+
+q:before, q:after {
+  content: ''
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sup {
+  top: -.5em
+}
+
+sub {
+  bottom: -.25em
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+ins, a {
+  text-decoration: none
+}
+
+input[type='button'] {
+  -webkit-appearance: none;
+  outline: none
+}
+
+.flex {
+  @include display-flex;
+}
+
+.column {
+  @include flex-direction(column);
+}
+
+.row {
+  @include flex-direction(row);
+}
+
+.wrap {
+  @include flex-wrap(wrap)
+}
+
+.nowrap {
+  @include flex-wrap(nowrap)
+}
+
+.justify-content-center {
+  @include justify-content(center);
+}
+
+.justify-content-between {
+  @include justify-content(space-between);
+}
+
+.justify-content-around {
+  @include justify-content(space-around);
+}
+
+.justify-content-start {
+  @include justify-content(flex-start);
+}
+
+.justify-content-end {
+  @include justify-content(flex-end);
+}
+
+.align-items-center {
+  @include align-items(center);
+}
+
+.align-items-start {
+  @include align-items(flex-start);
+}
+
+.align-items-end {
+  @include align-items(flex-end);
+}
+
+.align-items-stretch {
+  @include align-items(stretch);
+}
+
+.align-items-baseline {
+  @include align-items(baseline);
+}
+
+.align-self-center {
+  @include align-self(center);
+}
+
+.align-self-start {
+  @include align-self(flex-start);
+}
+
+.align-self-end {
+  @include align-self(flex-end);
+}
+
+.align-self-stretch {
+  @include align-self(stretch);
+}
+
+.align-self-baseline {
+  @include align-self(baseline);
+}
+
+.flex-1 {
+  @include flex(1);
+}
+
+.flex-2 {
+  @include flex(2);
+}
+
+.flex-3 {
+  @include flex(3);
+}
+
+.flex-4 {
+  @include flex(4);
+}
+
+.flex-5 {
+  @include flex(5);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+@import "variable";
+@import "function";
+@import "mixin";
+@import "common";
+
+html {
+  background-color: $background-color;
+}
+
+.dialog-mask {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  opacity: 0;
+  background: rgba(0, 0, 0, .4);
+}
+
+.mask-in {
+  opacity: 1 !important;
+}

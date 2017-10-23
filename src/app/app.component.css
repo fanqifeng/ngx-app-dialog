@@ -1,0 +1,40 @@
+/*dialog backtop css*/
+
+
+/**/
+.margin-top-common{
+  margin-top: 30px;
+}
+
+.common-btn {
+  max-height: 36px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background: #0070D1;
+}
+
+.common-btn:hover {
+  background: #298BE8;
+}
+
+.common-btn:active {
+  background: #00386D;
+  box-shadow: 0 0 3px 0 rgba(0, 118, 222, 0.5);
+}
+
+.common-btn.btn-sm {
+  max-height: 26px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.common-btn i {
+  animation: rotate360 1s linear infinite;
+}
